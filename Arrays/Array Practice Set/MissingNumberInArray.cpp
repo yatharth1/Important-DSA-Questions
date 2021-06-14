@@ -8,7 +8,7 @@ void checkMissing(vector<int> a){
     for(int i = 0; i < n; i++)
     {
         xor1 = xor1^a[i];
-        xor2 = xor2^i+1;
+        xor2 = xor2^(i+1);
     }
 
     cout << (xor1^xor2);
